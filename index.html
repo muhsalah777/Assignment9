@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body id="home" class="position-relative bg-img">
+
+    <div class="d-flex justify-content-center">
+    <h1 class="position-relative text-center py-5 ff-p hov">Bookmark</h1>
+    </div>
+    
+
+    <form class="container py-4">
+    <div class="mb-3">
+        <label for="siteName" class="text-white mb-2">Site Name</label>
+        <input class="form-control" placeholder="Bookmark Name" type="text" name="" id="siteName">
+    </div>
+    <div class="mb-3">
+        <label for="siteURL" class="text-white mb-2">Site URL</label>
+        <input class="form-control" type="url" name="" placeholder="Website URL" id="siteURL">
+    </div>
+    <button   onclick="sub(siteNameInput.siteNameInput,siteURLInput.siteURLInput)"    type="button" class="btn btn-outline-light">Submit</button>
+</form>
+<table  class="table container shadow table-hover align-middle table-striped text-center table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="myData">
+       
+        
+     
+    </tbody>
+</table>
+
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
